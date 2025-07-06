@@ -89,6 +89,63 @@
             background: #5a6fd8;
         }
         
+        .legal-links {
+            background: #f0f8ff;
+            padding: 25px;
+            border-radius: 12px;
+            margin: 30px 0;
+            border: 2px solid #e3f2fd;
+        }
+        
+        .legal-links h3 {
+            color: #1976d2;
+            margin-bottom: 15px;
+            font-size: 1.3rem;
+        }
+        
+        .legal-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 15px;
+            margin-top: 15px;
+        }
+        
+        .legal-item {
+            background: white;
+            padding: 15px;
+            border-radius: 8px;
+            border: 1px solid #e0e0e0;
+            transition: transform 0.2s, box-shadow 0.2s;
+        }
+        
+        .legal-item:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+        }
+        
+        .legal-item h4 {
+            color: #333;
+            margin-bottom: 8px;
+            font-size: 1.1rem;
+        }
+        
+        .legal-item p {
+            color: #666;
+            font-size: 0.9rem;
+            margin-bottom: 10px;
+        }
+        
+        .legal-item a {
+            color: #667eea;
+            text-decoration: none;
+            font-weight: 500;
+            font-size: 0.9rem;
+        }
+        
+        .legal-item a:hover {
+            text-decoration: underline;
+        }
+        
         ul {
             margin-left: 20px;
         }
@@ -116,6 +173,10 @@
             .section {
                 padding: 20px;
             }
+            
+            .legal-grid {
+                grid-template-columns: 1fr;
+            }
         }
     </style>
 </head>
@@ -128,7 +189,7 @@
         
         <div class="content">
             <div class="section">
-                <h2>�� Contact Support</h2>
+                <h2> Contact Support</h2>
                 <p>Need help with SwiftReceipt? We're here to help!</p>
                 
                 <div class="contact-info">
@@ -140,7 +201,41 @@
             </div>
             
             <div class="section">
-                <h2>�� Report a Bug</h2>
+                <h2> Legal Documents</h2>
+                <p>Important legal information about using SwiftReceipt:</p>
+                
+                <div class="legal-links">
+                    <h3>�� Required Documents</h3>
+                    <div class="legal-grid">
+                        <div class="legal-item">
+                            <h4>Privacy Policy</h4>
+                            <p>How we collect, use, and protect your data</p>
+                            <a href="privacy.html">Read Privacy Policy →</a>
+                        </div>
+                        
+                        <div class="legal-item">
+                            <h4>Terms of Service</h4>
+                            <p>Rules and guidelines for using SwiftReceipt</p>
+                            <a href="terms.html">Read Terms of Service →</a>
+                        </div>
+                        
+                        <div class="legal-item">
+                            <h4>Subscription Terms</h4>
+                            <p>Details about premium subscription features</p>
+                            <a href="subscription.html">Read Subscription Terms →</a>
+                        </div>
+                        
+                        <div class="legal-item">
+                            <h4>Refund Policy</h4>
+                            <p>Information about refunds and cancellations</p>
+                            <a href="refund.html">Read Refund Policy →</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="section">
+                <h2> Report a Bug</h2>
                 <p>Found an issue? Please include the following information:</p>
                 <ul>
                     <li>Device model and iOS version</li>
@@ -152,7 +247,7 @@
             </div>
             
             <div class="section">
-                <h2>�� Feature Requests</h2>
+                <h2> Feature Requests</h2>
                 <p>Have an idea for SwiftReceipt? We'd love to hear it!</p>
                 <ul>
                     <li>New features you'd like to see</li>
@@ -167,8 +262,10 @@
                 <ul>
                     <li><strong>How do I connect my thermal printer?</strong> Use the printer scanner in the app settings.</li>
                     <li><strong>Can I export my data?</strong> Yes, you can export receipts as PDF or CSV.</li>
-                    <li><strong>Is my data secure?</strong> All data is encrypted and stored securely.</li>
+                    <li><strong>Is my data secure?</strong> All data is encrypted and stored locally on your device.</li>
                     <li><strong>Do you support multiple currencies?</strong> Yes, SwiftReceipt supports global currencies.</li>
+                    <li><strong>How do I cancel my subscription?</strong> Go to Settings > Apple ID > Subscriptions and cancel SwiftReceipt.</li>
+                    <li><strong>Can I get a refund?</strong> Contact Apple Support through reportaproblem.apple.com</li>
                 </ul>
             </div>
             
